@@ -4,9 +4,9 @@
 
 /**
  * main - Entry point
- *   
+ *
  * Return: Always 0 (Success)
- *     
+ *
  */
 
 
@@ -34,7 +34,7 @@ int main(void)
 
 		printf("Size of a long long int: %lu byte(s)\n", sizeof(alonglong));
 
-		printf("Size of a float: %lu byte(s)\n", sizeof(afloat));	
+		printf("Size of a float: %lu byte(s)\n", sizeof(afloat));
 
 
 																							return (0);
