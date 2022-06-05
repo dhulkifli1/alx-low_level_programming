@@ -6,22 +6,35 @@
  */
 
 int main(void)
-{
-	int a;
-	int b;
 
-	for (a = '0'; a <= '9'; a++)
+{
+
+	int tens;
+
+	int ones;
+
+
+
+	for (tens = 0; tens <= 9; tens++)
+
 	{
-		for (b = a + '1'; b <= '9'; b++)
+
+		for (ones = tens + 1; ones <= 9; ones++)
+
 		{
-			putchar(a);
-			putchar(b);
-				if (a < '8')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+
+			putchar(tens + '0');
+
+			putchar(ones + '0');
+			if (tens < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	return (0);
 }
+
+
+
