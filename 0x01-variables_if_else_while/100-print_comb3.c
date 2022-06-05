@@ -16,7 +16,7 @@ int main(void)
 	}
 	for (b = '0'; b <= '9'; b++)
 	{
-		if (a != b && a <b && a < '8')
+		if (a != b && a < b && a < '8')
 		{
 			putchar(b);
 			putchar(',');
