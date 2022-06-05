@@ -13,16 +13,18 @@ int main(void)
 	for (a = '0'; a <= '9'; a++)
 	{
 		putchar(a);
-		for (b = '0'; b <= '9'; b++)
+		if (a != b && a < b)
 		{
-			if (a != b && a < b)
-				putchar(b);
-			if (a < '8')
+			for (b = '0'; b <= '9'; b++)
 			{
-				putchar(',');
-				putchar(' ');
+				if (a < '8')
+				{
+					putchar(b);
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	return (0);
+	return(0);
 }
