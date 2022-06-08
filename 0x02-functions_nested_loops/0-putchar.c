@@ -11,7 +11,6 @@ int main(void)
 
 	while (i < 9)
 	{
-	
 		_putchar(word[i]);
 		i++;
 	}
