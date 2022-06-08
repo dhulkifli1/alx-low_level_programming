@@ -3,7 +3,7 @@
 /**
  * _islower - Checks for lowercase character
  * Return: Always 0 Success
- * c - Argument passed into function
+ * c - Argument passed to the function
  */
 
 int _islower(int c)
@@ -16,4 +16,5 @@ int _islower(int c)
 	{
 		return (0);
 	}
+	return (0);
 }
