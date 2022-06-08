@@ -2,6 +2,7 @@
 
 /**
  * numLength - Calculates the lenthg
+ * @num: argument
  *
  * Return: Returns a 1 or length
  */
