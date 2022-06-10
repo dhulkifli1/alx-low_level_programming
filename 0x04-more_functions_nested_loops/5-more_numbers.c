@@ -2,8 +2,6 @@
 
 /**
  * more_numbers -  prints 10 times the numbers, from 0 to 14
- * @a: While loop variable
- * @b: For loop variable
  * Return: nothing
  */
 
@@ -11,14 +9,17 @@ void more_numbers(void)
 {
 	int a = 0;
 	int b;
+	int tens;
 
-	while (a <= 57; a++)
+	for (a = 48; a <= 57; a++)
 	{
-		for (b = 48; b <= '14'; b++)
+		for (b = 0; b <= 14; b++)
 		{
-			_putchar(b);
+			tens = '0' + (b / 10);
+			if (tens != '0')
+				_putchar(tens);
+			_putchar('0' + b % 10);
 		}
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
