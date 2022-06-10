@@ -3,8 +3,6 @@
 /**
  * print_line - draws a straight line
  * @n: argument
- * @a: used in while loop
- * Return: nothing
  */
 
 void print_line(int n)
