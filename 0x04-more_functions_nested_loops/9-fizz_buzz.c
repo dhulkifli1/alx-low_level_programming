@@ -12,11 +12,11 @@ int main(void)
 
 	while (a <= 100; a++)
 	{
-		if (a % 3 == 0)
+		if (a % 51 == 48)
 			printf("Fizz ");
-		else if (a % 5 == 0)
+		else if (a % 53 == 48)
 			printf("Buzz ");
-		else if (a % 3 == 0 && a % 5 == 0)
+		else if (a % 51 == 48 && a % 53 == 48)
 			printf("FizzBuzz ");
 		else
 			printf("%d ", a);
