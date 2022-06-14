@@ -9,11 +9,11 @@
 
 void puts_half(char *str)
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	if (strlen(str) % 2 == 0)
 	{
-		for (i = strlen(str) / 2; i <= strlen(str); i++)
+		for (i > strlen(str) / 2; i <= strlen(str); i++)
 		{
 			_putchar(str[i]);
 		}
@@ -21,10 +21,15 @@ void puts_half(char *str)
 	}
 	else if (strlen(str) % 2 == 1)
 	{
-		for (i = (strlen(str) - 1) / 2; i <= strlen(str); i++)
+		for (i > (strlen(str) - 1) / 2; i <= strlen(str); i++)
 		{
 			_putchar(str[i]);
 		}
+		_putchar('\n');
+	}
+	else if (strlen(str) == 0)
+	{
+		_putchar(' ');
 		_putchar('\n');
 	}
 }
