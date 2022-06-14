@@ -21,5 +21,7 @@ void print_array(int *a, int n)
 		}
 		else if ( i == n - 1)
 		{
-			printf("\n")
+			printf("\n");
+		}
+	}
 }
