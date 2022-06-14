@@ -9,13 +9,11 @@
 
 void print_rev(char *s)
 {
-	int i = strlen(s);
-	int j = i - 1;
+	int i = 0;
 
-	while (i >= 48)
-	{
-		_putchar(s[j]);
-		i--;
-	}
+	while (s[i])
+		i++;
+	while (i--)
+		_putchar(s[i]);
 	_putchar('\n');
 }
