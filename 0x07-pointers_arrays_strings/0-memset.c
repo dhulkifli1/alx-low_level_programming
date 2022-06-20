@@ -1,11 +1,11 @@
 #include "main.h"
 
 /*
- * *_memset - fills the first n bytes of the memory area
+ * _memset - fills the first n bytes of the memory area
  * pointed to by s with the constant byte b
  * @s: pointer of address to be filled
- * @b: the constant byte
- * @n: number of times the constant byte will fill
+ * @b: the character to fill
+ * @n: size of addresses to fill
  * Return: Returns pointer to the memory location
  */
 
