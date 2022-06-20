@@ -9,15 +9,15 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int a = 0;
 	int b = 0;
+	int c = 0;
 
-	for (a = 0; a < 8; a++)
+	for (b = 0; b < 8; b++)
 	{
-		for (b = 0; b < 8; b++)
+		for (c = 0; c < 8; c++)
 		{
-			printf("%c", *(a[a] + b));
-			if (b == 7)
+			printf("%c", *(a[b] + c));
+			if (c == 7)
 				printf("\n");
 		}
 	}
