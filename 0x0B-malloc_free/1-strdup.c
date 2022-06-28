@@ -9,7 +9,7 @@
  * Return: NULL if str = NULL and if insufficient memory was available
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
-	strdup(*str);
+	strdup(const char *str);
 }
