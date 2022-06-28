@@ -11,5 +11,5 @@
 
 char *_strdup(char *str)
 {
-	strdup(const char *str);
+	return (strdup(str));
 }
