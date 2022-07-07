@@ -6,6 +6,7 @@
  * print_numbers - prints numbers, followed by a new line.
  * @seperator: string between two numbers
  * @n: number of integers passed to the function
+ * @...: Variable arguments
  * @Return: returns nothing
  */
 
