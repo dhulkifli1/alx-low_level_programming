@@ -30,7 +30,7 @@ int linear_search(int *array, size_t size, int value)
 }
 
 /**
- * jump_search - Searches for a value in a sorted array 
+ * jump_search - Searches for a value in a sorted array
  *               of integers using the Jump search algorithm
  * @array: Pointer to the first element of the array to search in
  * @size: Number of elements in array
@@ -48,7 +48,7 @@ int jump_search(int *array, size_t size, int value)
 
 	if (array == NULL)
 		return (-1);
-	for (i = 0; i <size; i = i + m)
+	for (i = 0; i < size; i = i + m)
 	{
 		if (array[i] > value)
 		{
