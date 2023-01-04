@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 #include "search_algos.h"
 
@@ -42,29 +43,25 @@ int linear_search(int *array, size_t size, int value)
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t m = sqrt(size);
-	size_t i, counter, low, high, linear, answer;
-	int linear_array[] = {0};
+	size_t i, jump, step;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
-	for (i = 0; i < size; i = i + m)
+
+	step = sqrt(size);
+	for (i = jump = 0; jump < size && array[jump] < value;)
 	{
-		if (array[i] > value)
-		{
-			low = i - m;
-			high = i;
-			for (counter = low; counter <= high; counter++)
-			{
-				for (linear = 0; linear < m; linear++)
-				{
-					linear_array[linear] = array[counter];
-				}
-			}
-			answer = linear_search(linear_array, m, value);
-			return (answer);
-		}
-		continue;
+		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+		i = jump;
+		jump += step;
 	}
-	return (-1);
+
+	printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
+
+	jump = jump < size - 1 ? jump : size - 1;
+	for (; i < jump && array[i] < value; i++)
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+
+	return (array[i] == value ? (int)i : -1);
 }
